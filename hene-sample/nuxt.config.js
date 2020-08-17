@@ -78,8 +78,8 @@ export default {
           accent: "#cddc39",
           error: "#ffeb3b",
           warning: "#ffc107",
-          info: "#ff5722",
-          success: "#795548",
+          info: "#ffbd63",
+          success: "#68a1ff",
         },
       }
     }
