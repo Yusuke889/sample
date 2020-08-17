@@ -23,7 +23,7 @@
       <v-dialog v-model="dialog" persistent max-width="600px">
         <v-card>
           <v-card-title>
-            <span class="headline">管理者アカウント招待</span>
+            <span class="headline">管理者アカウント作成</span>
           </v-card-title>
           <v-card-text>
             <v-container>
@@ -145,9 +145,8 @@
         },
 
         methods: {
-            // 第一引数にクリックした行のObjectが渡されるので処理を用意しておく
-            onClickEvent(data) {
-                console.log(data)
+            onClickEvent() {
+                this.$router.push(`/admin/admin/1`)
             },
             /**
              * 招待時の処理
