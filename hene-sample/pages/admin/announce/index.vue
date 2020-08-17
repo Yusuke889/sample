@@ -18,7 +18,7 @@
           to="/admin/announce/1"
         >
           <v-card-text>
-            <div>タイトルs</div>
+            <div>タイトル</div>
             <p class="display-1 text--primary">
               {{item.title}}
             </p>
