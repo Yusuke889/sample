@@ -16,20 +16,20 @@
           <v-text-field
             v-model="name"
             :counter="100"
-            label="Name"
+            label="名前"
             required
           ></v-text-field>
 
           <v-text-field
             v-model="email"
-            label="E-mail"
+            label="メールアドレス"
             required
           ></v-text-field>
 
           <v-select
             v-model="select"
             :items="['閲覧', '管理者']"
-            label="Item"
+            label="権限"
             required
           ></v-select>
 
@@ -52,14 +52,12 @@
     </v-card>
     </v-form>
 
-
-
     <!--  モーダル  -->
     <v-row justify="center">
       <v-dialog v-model="dialog" persistent max-width="600px">
         <v-card min-height="175px">
           <v-card-title>
-            <h3>本当にこのユーザーを削除してよろしいですか？</h3>
+            <h3>本当にこのアカウントを削除してよろしいですか？</h3>
           </v-card-title>
           <v-card-actions>
             <v-btn color="error"@click="deleted" class="mr-auto">削除する</v-btn>

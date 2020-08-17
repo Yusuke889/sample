@@ -77,7 +77,7 @@ export default {
         {
             icon: 'mdi-notification-clear-all',
             title: 'お知らせ',
-            to: '/inspire'
+            to: '/admin/announce'
         }
       ],
       miniVariant: false,

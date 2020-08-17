@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "nuxt": "^2.14.0",
+    "vue-ctk-date-time-picker": "^2.5.0",
     "vue-router": "^3.4.3"
   },
   "devDependencies": {
