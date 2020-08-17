@@ -24,7 +24,7 @@
               :items="items"
               attach
               chips
-              label="Chips"
+              label="公開範囲"
               multiple
             ></v-select>
 
@@ -98,11 +98,11 @@
             <h3>本当にこのお知らせを削除してもよろしいですか？</h3>
           </v-card-title>
           <v-card-actions>
-            <v-btn color="error" @click="deleted" class="mr-auto">削除する</v-btn>
+            <v-btn color="error" @click="deleted" class="mr-auto">削除</v-btn>
           </v-card-actions>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="blue darken-1" text @click="dialog = false">閉じる</v-btn>
+            <v-btn color="blue darken-1" text @click="dialog = false">キャンセル</v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
@@ -127,7 +127,7 @@
                 lastReleaseDate: '2020-09-31',
                 status: 'editing',
                 announceScope: ['userWeb'],
-                items: ['ユーザーWeb', '店舗web', '店舗web', 'buzz'],
+                items: ['ユーザーWeb', '店舗web', '店舗IOS'],
                 value: ['userWeb', 'shopWeb', 'shopiOS'],
                 requestStartDate: '',
                 requestEndDate: '',

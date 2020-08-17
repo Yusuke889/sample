@@ -24,7 +24,7 @@
               :items="items"
               attach
               chips
-              label="Chips"
+              label="公開範囲"
               multiple
             ></v-select>
 
@@ -102,16 +102,11 @@
                 lastReleaseDate: '2020-09-31',
                 status: 'editing',
                 announceScope: ['userWeb'],
-                items: ['ユーザーWeb', '店舗web', '店舗web', 'buzz'],
+                items: ['ユーザーWeb', '店舗web', '店舗IOS'],
                 value: ['userWeb', 'shopWeb', 'shopiOS'],
                 requestStartDate: '',
                 requestEndDate: '',
                 radios: 'radio-1'
-            }
-        },
-        methods: {
-            create() {
-                this.updateSnackbar = true
             }
         },
         computed: {
