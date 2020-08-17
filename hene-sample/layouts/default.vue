@@ -51,22 +51,37 @@ export default {
   data () {
     return {
       clipped: false,
-      drawer: false,
+      drawer: true,
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
+          icon: 'mdi-shopping-search',
+          title: '店舗',
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
+          icon: 'mdi-credit-card',
+          title: '請求',
           to: '/inspire'
+        },
+        {
+            icon: 'mdi-human',
+            title: 'ユーザー',
+            to: '/inspire'
+        },
+        {
+            icon: 'mdi-account',
+            title: 'アカウント',
+            to: '/admin/admin'
+        },
+        {
+            icon: 'mdi-notification-clear-all',
+            title: 'お知らせ',
+            to: '/inspire'
         }
       ],
       miniVariant: false,
-      title: '管理画面ログイン'
+      title: '顔認証システム'
     }
   }
 }
