@@ -29,6 +29,9 @@
             <v-container>
               <v-row>
                 <v-col cols="12">
+                  <v-text-field label="名前" required></v-text-field>
+                </v-col>
+                <v-col cols="12">
                   <v-text-field label="登録メールアドレス" required></v-text-field>
                 </v-col>
                 <v-col cols="12" sm="6">
@@ -42,7 +45,7 @@
                   <v-btn
                     color="success"
                     required
-                    @click="invitaiton">招待する</v-btn>
+                    @click="invitaiton">作成する</v-btn>
                 </v-col>
               </v-row>
             </v-container>
@@ -85,7 +88,7 @@
                 x: null,
                 y: 'top',
                 headers: [
-                    {text: 'アカウントネーム', value: 'name',},
+                    {text: '名前', value: 'name',},
                     {text: 'メールアドレス', value: 'email'},
                     {text: '権限', value: 'role'},
                 ],

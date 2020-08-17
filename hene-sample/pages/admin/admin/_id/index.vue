@@ -64,6 +64,10 @@
           <v-card-actions>
             <v-btn color="error"@click="deleted" class="mr-auto">削除する</v-btn>
           </v-card-actions>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn color="blue darken-1" text @click="dialog = false">閉じる</v-btn>
+          </v-card-actions>
         </v-card>
       </v-dialog>
     </v-row>
