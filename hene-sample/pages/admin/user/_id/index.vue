@@ -21,7 +21,6 @@
             >
               <v-text-field
                 v-model="name"
-                :counter="100"
                 label="名前"
                 readonly
               ></v-text-field>
@@ -46,19 +45,19 @@
 
               <v-text-field
                 v-model="face"
-                label="顔情報認証時刻"
+                label="顔情報認証日時"
                 readonly
               ></v-text-field>
 
               <v-text-field
                 value="2020年10月20日 13時59分"
-                label="クレジットカード認証時刻"
+                label="クレジットカード認証日時"
                 readonly
               ></v-text-field>
 
               <v-text-field
                 value="2020年9月15日 20時30分"
-                label="登録日時"
+                label="アカウント作成日時"
                 readonly
               ></v-text-field>
 
@@ -71,6 +70,12 @@
               <v-text-field
                 value="登録済み"
                 label="ステータス"
+                readonly
+              ></v-text-field>
+
+              <v-text-field
+                value=" "
+                label="アカウント停止日時"
                 readonly
               ></v-text-field>
             </v-form>
@@ -101,10 +106,10 @@
       <v-dialog v-model="dialog" persistent max-width="600px">
         <v-card min-height="175px">
           <v-card-title>
-            <h3>本当にこのアカウントを削除してよろしいですか？</h3>
+            <h3>本当にこのアカウントを停止してよろしいですか？<br>このユーザーはサービスを利用できなくなります</h3>
           </v-card-title>
           <v-card-actions>
-            <v-btn color="error" @click="deleted" class="mr-auto">削除する</v-btn>
+            <v-btn color="error" @click="deleted" class="mr-auto">停止</v-btn>
           </v-card-actions>
           <v-card-actions>
             <v-spacer></v-spacer>
@@ -123,7 +128,7 @@
             return {
                 dialog: false,
                 name: '管理者ユーザー1',
-                email: 'dev-test@@example.com',
+                email: 'dev-test@example.com',
                 gender: '男',
                 tel: '09011112222',
                 face: '2020年11月1日 10時22分',
@@ -133,9 +138,24 @@
                         value: 'name',
                     },
                     {text: '利用日時', value: 'theDateOfUse'},
-                    {text: '発生金額', value: 'amount'},
+                    {text: 'お支払い金額', value: 'amount'},
                 ],
                 events: [
+                    {
+                        name: 'イベント会場',
+                        theDateOfUse: '2020年12月3日 19時3分',
+                        amount: '8,000円',
+                    },
+                    {
+                        name: 'ホテル',
+                        theDateOfUse: '2020年12月2日 17時10分',
+                        amount: '35,000円',
+                    },
+                    {
+                        name: 'ゴルフ場',
+                        theDateOfUse: '2020年12月2日 9時5分',
+                        amount: '10,000円',
+                    },
                     {
                         name: 'スキー会場',
                         theDateOfUse: '2020年11月2日 13時16分',
@@ -147,24 +167,9 @@
                         amount: '20,000円',
                     },
                     {
-                        name: 'ホテル',
-                        theDateOfUse: '2020年12月2日 17時10分',
-                        amount: '35,000円',
-                    },
-                    {
-                        name: 'ゴルフ場',
-                        theDateOfUse: '2020年13月2日 9時5分',
-                        amount: '10,000円',
-                    },
-                    {
                         name: 'プール',
                         theDateOfUse: '2020年9月2日 10時55分',
                         amount: '2,000円',
-                    },
-                    {
-                        name: 'イベント会場',
-                        theDateOfUse: '2020年12月3日 19時3分',
-                        amount: '8,000円',
                     },
                 ]
             }
