@@ -55,9 +55,14 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-shopping-search',
-          title: '店舗',
-          to: '/'
+          icon: 'mdi-shopping',
+          title: '店舗一覧',
+          to: '/admin/shop/'
+        },
+        {
+            icon: 'mdi-shopping-search',
+            title: '承認依頼店舗一覧',
+            to: '/admin/shop/approval'
         },
         {
           icon: 'mdi-credit-card',
