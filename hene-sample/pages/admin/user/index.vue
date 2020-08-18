@@ -24,6 +24,13 @@
           >
             検索
           </v-btn>
+          <v-spacer />
+          <v-btn
+            color="secondary"
+            class="mr-4"
+          >
+            CSVダウンロード
+          </v-btn>
         </v-card-title>
       </v-card>
     <v-data-table
