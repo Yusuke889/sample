@@ -67,7 +67,7 @@ export default {
         {
             icon: 'mdi-human',
             title: 'ユーザー',
-            to: '/inspire'
+            to: '/admin/user'
         },
         {
             icon: 'mdi-account',
