@@ -36,7 +36,11 @@
     <v-data-table
       :headers="headers"
       :items="items"
+      :page.sync="page"
+      :items-per-page="itemsPerPage"
+      @page-count="pageCount = $event"
       item-key="name"
+      hide-default-footer
       class="elevation-1 row-pointer"
       @click:row="onClickEvent"
     >
@@ -52,6 +56,9 @@
         <span v-else="item.deleteAt">退会済み</span>
       </template>
     </v-data-table>
+    <div class="text-center pt-2">
+      <v-pagination v-model="page" :length="pageCount"></v-pagination>
+    </div>
   </div>
 </template>
 
@@ -189,6 +196,9 @@
                         deleteAt: null,
                     },
                 ],
+                page: 1,
+                pageCount: 1,
+                itemsPerPage: 10,
             }
         },
 
