@@ -61,7 +61,7 @@ export default {
         },
         {
             icon: 'mdi-shopping-search',
-            title: '承認依頼店舗一覧',
+            title: '承認依頼一覧',
             to: '/admin/shop/approval'
         },
         {
