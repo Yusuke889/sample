@@ -50,10 +50,22 @@
               ></v-text-field>
 
               <v-text-field
-                value="承認済み"
+                value="認証済み"
                 label="ステータス"
                 readonly
               ></v-text-field>
+
+              <v-text-field
+                value="μSockets"
+                label="利用顔情報システム"
+                readonly
+              ></v-text-field>
+
+            <v-text-field
+              value="iPhone11"
+              label="利用デバイス"
+              readonly
+            ></v-text-field>
 
               <v-text-field
                 value="2020年10月20日 13時59分"
@@ -74,6 +86,15 @@
               ></v-text-field>
           </v-card-text>
         </v-card>
+
+    <v-card
+      outlined
+    >
+      <v-card-title>請求履歴</v-card-title>
+      <v-card-actions>
+        請求情報が分かり次第着手
+      </v-card-actions>
+    </v-card>
 
     <!--  モーダル  -->
     <v-row justify="center">
