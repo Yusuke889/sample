@@ -21,7 +21,7 @@
 
               <v-text-field
                 value="08011119999"
-                label="電話番号"
+                label="店舗電話番号"
                 readonly
               ></v-text-field>
 
@@ -30,6 +30,18 @@
                 label="メールアドレス"
                 readonly
               ></v-text-field>
+
+            <v-text-field
+              value="1008111"
+              label="郵便番号"
+              readonly
+            ></v-text-field>
+
+            <v-text-field
+              value="東京都千代田区千代田１−１"
+              label="住所"
+              readonly
+            ></v-text-field>
 
               <v-text-field
                 value="店舗担当者氏名"
@@ -101,7 +113,7 @@
       <v-dialog v-model="dialog" persistent max-width="600px">
         <v-card min-height="175px">
           <v-card-title>
-            <h3>本当にこのアカウントを停止してよろしいですか？<br>このユーザーはサービスを利用できなくなります</h3>
+            <h3>本当にこのアカウントを停止してよろしいですか？<br>この店舗はサービスを利用できなくなります</h3>
           </v-card-title>
           <v-card-actions>
             <v-btn color="error" @click="deleted" class="mr-auto">停止</v-btn>

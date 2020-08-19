@@ -88,7 +88,7 @@
                 y: 'top',
                 headers: [
                     {text: '店舗名', value: 'name',},
-                    {text: '電話番号', value: 'tel'},
+                    {text: '店舗電話番号', value: 'tel'},
                     {text: '担当者様氏名', value: 'person'},
                     {text: '承認ステータス', value: 'status'},
                     {text: '詳細', value: 'detail'},
@@ -115,7 +115,7 @@
                     {
                         name: 'スキー会場',
                         tel: '09048709933',
-                        person: '2020-01-01 21:00:00',
+                        person: '中田 義経',
                         status: '承認済み',
                     },
                     {
