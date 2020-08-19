@@ -17,7 +17,7 @@
           class="black--text"
           @click="snackbar = true"
         >
-          詳細へ
+          詳細
         </v-btn>
       </template>
       <template v-slot:item.operation="{ item }">
@@ -96,17 +96,41 @@
                 y: 'top',
                 headers: [
                     {text: '店舗名', value: 'name',},
-                    {text: '電話番号', value: 'tel'},
+                    {text: '店舗電話番号', value: 'tel'},
                     {text: '承認依頼申請時刻', value: 'approvalTime'},
                     {text: '詳細', value: 'detail'},
                     {text: '操作', value: 'operation'},
                 ],
                 items: [
                     {
-                        name: 'テスト店舗',
-                        tel: '09041942227',
-                        approvalTime: '2020-01-01 21:00:00',
-                        operation: '2020-01-01 21:30:00',
+                        name: 'テスト店舗1',
+                        tel: '09011112222',
+                        approvalTime: '2020-12-01 12:00',
+                    },
+                    {
+                        name: 'テスト店舗2',
+                        tel: '09033334444',
+                        approvalTime: '2020-11-21 14:00',
+                    },
+                    {
+                        name: 'テスト店舗3',
+                        tel: '09055556666',
+                        approvalTime: '2020-11-10 09:20',
+                    },
+                    {
+                        name: 'テスト店舗4',
+                        tel: '09077778888',
+                        approvalTime: '2020-10-17 20:23',
+                    },
+                    {
+                        name: 'テスト店舗5',
+                        tel: '09099990000',
+                        approvalTime: '2020-08-02 23:45',
+                    },
+                    {
+                        name: 'テスト店舗6',
+                        tel: '09012345678',
+                        approvalTime: '2020-07-01 21:10',
                     },
                 ],
                 page: 1,
