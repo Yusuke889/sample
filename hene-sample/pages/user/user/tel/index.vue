@@ -9,18 +9,17 @@
       sm8
       md6
     >
-      <v-card>
+      <v-card
+        min-width="300px"
+      >
         <v-card-title class="headline">
-          ログイン
+          新規会員会員登録
         </v-card-title>
         <v-card-actions>
-        <v-text-field label="メールアドレス" />
+          <v-text-field label="電話番号" />
         </v-card-actions>
         <v-card-actions>
-        <v-text-field append-icon="mdi-eye-off" label="パスワード" />
-        </v-card-actions>
-        <v-card-actions>
-          <v-btn>ログイン</v-btn>
+          <v-btn to="/user/user/authentication">SMS送信</v-btn>
         </v-card-actions>
       </v-card>
     </v-flex>

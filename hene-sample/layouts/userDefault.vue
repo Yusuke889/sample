@@ -9,7 +9,7 @@
       <v-spacer />
       <v-btn
         icon
-        to="/user/tel"
+        to="/user/user/tel"
       >
         <v-icon>mdi-login-variant</v-icon>
       </v-btn>
