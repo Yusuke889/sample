@@ -41,9 +41,11 @@
       @page-count="pageCount = $event"
       item-key="name"
       hide-default-footer
-      class="elevation-1 row-pointer"
-      @click:row="onClickEvent"
+      class="elevation-1"
     >
+      <template v-slot:item.name="{ item }">
+         <a href="aaa">{{ item.name }}</a>
+      </template>
       <template v-slot:item.face="{ item }">
         {{ item.face ? '済' :'未'}}
       </template>
@@ -216,9 +218,3 @@
         }
     }
 </script>
-
-<style lang="css" scoped>
-  .row-pointer >>> tbody tr :hover {
-    cursor: pointer;
-  }
-</style>

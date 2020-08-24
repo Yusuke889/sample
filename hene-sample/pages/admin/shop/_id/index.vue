@@ -6,6 +6,12 @@
           <v-card-title>店舗詳細
             <v-spacer/>
             <v-btn
+              color="info"
+              @click="deleteConfirm"
+            >
+              請求一覧へ
+            </v-btn>
+            <v-btn
               color="error"
               @click="deleteConfirm"
             >
@@ -73,12 +79,6 @@
                 readonly
               ></v-text-field>
 
-            <v-text-field
-              value="iPhone11"
-              label="利用デバイス"
-              readonly
-            ></v-text-field>
-
               <v-text-field
                 value="2020年10月20日 13時59分"
                 label="申請承認日時"
@@ -98,15 +98,6 @@
               ></v-text-field>
           </v-card-text>
         </v-card>
-
-    <v-card
-      outlined
-    >
-      <v-card-title>請求履歴</v-card-title>
-      <v-card-actions>
-        請求情報が分かり次第着手
-      </v-card-actions>
-    </v-card>
 
     <!--  モーダル  -->
     <v-row justify="center">
