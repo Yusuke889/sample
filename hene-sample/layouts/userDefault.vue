@@ -29,7 +29,27 @@
       :absolute="!fixed"
       app
     >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+      <v-row
+        justify="center"
+        no-gutters
+      >
+        <v-btn
+          v-for="link in links"
+          :key="link"
+          color="black"
+          text
+          rounded
+          class="my-2"
+        >
+          {{ link }}
+        </v-btn>
+        <v-col
+          class="text-center"
+          cols="12"
+        >
+          <span>&copy; {{ new Date().getFullYear() }}</span>
+        </v-col>
+      </v-row>
     </v-footer>
   </v-app>
 </template>
@@ -56,6 +76,10 @@
                 miniVariant: false,
                 right: true,
                 rightDrawer: false,
+                links: [
+                    '利用規約',
+                    'プライバシーポリシー',
+                ],
             }
         }
     }
